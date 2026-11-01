@@ -1476,3 +1476,88 @@ button.elevator-video-trigger:hover {
     justify-content: center;
   }
 }
+/* ---------- Home profile photo ---------- */
+
+.hero-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-frame {
+  position: relative;
+  width: min(100%, 390px);
+  padding: 14px;
+  border: 1px solid var(--line);
+  background: linear-gradient(
+    145deg,
+    rgba(18, 32, 49, 0.96),
+    rgba(8, 13, 22, 0.96)
+  );
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+.profile-frame::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 54px;
+  height: 54px;
+  border-top: 2px solid var(--blue);
+  border-right: 2px solid var(--blue);
+  pointer-events: none;
+}
+
+.profile-frame-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 13px;
+  color: var(--muted);
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 35%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  filter: saturate(0.88);
+}
+
+.profile-frame-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 14px;
+  color: var(--text);
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.profile-frame-caption span:last-child {
+  color: var(--muted);
+}
+
+/* Responsive photo sizing */
+@media (max-width: 900px) {
+  .profile-frame {
+    width: min(100%, 330px);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-profile {
+    margin-top: 28px;
+  }
+
+  .profile-frame {
+    width: min(100%, 290px);
+  }
+}
