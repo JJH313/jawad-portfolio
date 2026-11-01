@@ -1657,7 +1657,7 @@ button.elevator-video-trigger:hover {
 .hero-name-row {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 37px;
   margin: 0 0 27px;
 }
 
@@ -1669,9 +1669,9 @@ button.elevator-video-trigger:hover {
 }
 
 .hero-name-photo-frame {
-  flex: 0 0 115px;
-  width: 115px;
-  height: 175px;
+  flex: 0 0 120px;
+  width: 120px;
+  height: 180px;
   padding: 4px;
   border: 1px solid var(--line);
   background: linear-gradient(145deg, #12243a, #080d16);
@@ -1696,8 +1696,8 @@ button.elevator-video-trigger:hover {
   }
 
   .hero-name-photo-frame {
-    flex-basis: 88px;
-    width: 88px;
-    height: 135px;
+    flex-basis: 92px;
+    width: 92px;
+    height: 140px;
   }
 }
